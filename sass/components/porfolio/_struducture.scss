@@ -1,0 +1,115 @@
+.struducture{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .button__control {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .button__list:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .button__list {
+    transition: color $timing-function;
+    &:focus,
+    &:hover {
+    color: $akcent-color;}
+  }
+  .button__item {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $color-text;
+    background-color: $background;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color $timing-function, 
+    background-color $timing-function, 
+    box-shadow $timing-function;
+     &:hover,
+     &:focus{
+   color: $white-color;
+   background-color: $akcent-color;}
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+   0px 2px 2px rgba(0, 0, 0, 0.12);
+   }
+  .project{
+    display: flex;
+    flex-basis: calc(100% / 9);
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    gap: 30px;
+    
+  }
+
+  .project__example-text{
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: $second-color;
+  }
+  .project__link {
+    display: inline-block;
+    transition: box-shadow $timing-function;
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+ }
+  
+  .project__text-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $color-text;
+  }
+  .project__text-img{
+    padding: 20px 24px;
+    border: 1px solid $project-border-color;
+  border-radius: 0px 0px 4px 4px;
+  }
+  .project__list{
+    max-width: 370px;
+  }
+  .project__photo{
+    position: relative;
+    overflow: hidden;
+     }
+
+  .project__texts{
+    position: absolute;
+    
+    max-height: 294px;
+    display: flex;
+    align-items: center;
+    padding: 63px 24px;
+    background-color: $accent-color;
+    
+    
+    transition: transform $timing-function;
+    
+  }
+
+  .project__link:hover .project__texts{
+    transform: translateY(-100%);
+  }
+
+
+  .project__text{
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }

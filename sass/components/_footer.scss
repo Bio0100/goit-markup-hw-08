@@ -1,0 +1,135 @@
+.footer{
+  display: flex;
+  align-items: baseline;
+  background-color: $footer-color;
+}
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__contact {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $footer-contacts-color;
+  transition: color $timing-function;
+  
+  &:hover,
+  &:focus{
+    color: $akcent-color;}
+}
+
+.footer__flex-item .socials__link:hover,
+.footer__flex-item .socials__link:focus{
+    background-color: $akcent-color;
+  }
+  .footer__flex-item:nth-child(1) {
+    margin-right: 70px;}
+  .footer__flex-item:nth-child(2) {
+      margin-right: 93px;
+  }
+  .socials__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $white-color;
+    background-color: $white-color;
+    border-radius: 50%;
+    transition: background-color $timing-function, 
+    color $timing-function;
+    .footer__flex-item &:hover,
+    .footer__flex-item &:focus{
+    background-color: #2196F3;}
+    }
+  .footer__contact-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+  .footer__logo{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    text-decoration: none;
+  
+    & span,
+   .navigation__headr-logo span {
+    color: $akcent-color;}
+  }
+  .footer__contact {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $footer-contacts-color;
+    transition: color $timing-function;
+    &:hover,
+    &:focus{
+      color: $akcent-color;}
+    }
+.footer__contact-headr {
+  padding: 32px 0;
+}
+.footer__text{
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $white-color}
+.footer__input-email{
+  padding: 14px 16px;
+  margin-right: 12px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border-color $timing-function;
+
+&:hover{
+border-color: $accent-color;}
+
+&:focus{
+border-color: $accent-color;
+outline: none;}
+}
+.footer__form .button-main {
+  display: inline-flex;
+  align-items: center;
+}
+.footer__form .button-main::after{
+  content: '';  
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z' fill='%23fff'/%3E%3C/svg%3E");
+  
+}
+.footer__map{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $white-color;}
+  .socials__icon{
+    width: 20px;
+    height: 20px;   
+  }
+  .footer__flex-item .socials__link{
+    background-color: rgba(255, 255, 255, 0.1);
+  }

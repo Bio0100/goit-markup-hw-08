@@ -1,0 +1,32 @@
+.company__list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .company__link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: $fill-color;
+  border: 1px solid $fill-color;
+  border-radius: 4px;
+  transition: color $timing-function, 
+  border-color  $timing-function;
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+  color: $accent-color;
+  transition: color $timing-function;}
+}
+.company__icon{
+    max-width: 106px;
+    max-height: 60px;
+  }
+  .list-team-logo{
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    background-color: $white-color;
+  }

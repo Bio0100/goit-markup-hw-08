@@ -1,0 +1,121 @@
+.header-flex-container {
+  display: flex;
+  align-items: center;  
+}
+
+.header{
+  border-bottom: 1px solid #EEEE;
+}
+
+.navigation__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: $color-text;
+  text-decoration: none;
+  padding: 32px 0;
+}
+  
+.navigation__link-contact {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second-color;
+  text-decoration: none;
+  transition: color $timing-function;
+  
+  &:focus,
+  &:hover {
+  color:$akcent-color;
+  }
+}
+.navigation__list-contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+  
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list-contact .navigation__item:not(:last-child) {
+  margin-right: 53px;
+}
+
+.navigation__list .navigation__item:not(:last-child) {
+  margin-right: 53px;
+}
+
+.navigation__icon-mail {
+  width: 16px;
+  height: 12px;  
+  margin-right: 10px;
+}
+  
+.navigation__icon-phone {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.navigation__link{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color $timing-function;
+}
+    
+.navigation__link::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  display: inline-flex;
+  width: 100%;
+  height: 4px;         
+  background-color: $accent-color;
+  border-radius: 2px;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform $timing-function,
+    opacity $timing-function;
+}
+
+.current:hover::after,
+.current:focus::after {
+        transform: scale(1);
+        opacity: 1;}
+
+.current::after, .navigation__link .current:hover::after, .navigation__link .current:focus::after {
+      transform: scale(1);
+      opacity: 1;
+        }
+.current{
+      color: #2196F3;
+        }
+    .navigation__list-contact {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+    }
+    .header__navigation {
+      display: flex;
+      align-items: center;
+      
+    }
