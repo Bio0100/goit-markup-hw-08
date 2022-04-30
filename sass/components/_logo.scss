@@ -9,6 +9,10 @@
     text-decoration: none;
     display: flex;
     margin-right: 94px;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+  }
   }
   .navigation__headr-logo span {
     color: $akcent-color;

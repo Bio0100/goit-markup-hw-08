@@ -119,3 +119,20 @@
       align-items: center;
       
     }
+    .icon__menu{
+      width: 40px;
+      height: 40px;
+    }
+    .header__bt-menu{
+      display: block;
+      margin-left: auto;
+      background-color: transparent;
+      outline: transparent;
+      border: transparent;
+    }
+    .icon-open{
+      opacity: 1;
+    }
+    .icon-close{
+      opacity: 0;
+    }
