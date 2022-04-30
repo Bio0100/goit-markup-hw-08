@@ -320,43 +320,46 @@ button {
   cursor: pointer;
 }
 
-.features-texts {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.features-text {
-  font-size: 14px;
-  font-weight: 700;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.features-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.features-item {
-  max-width: 270px;
-}
-
 .features__section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
-.features-icons {
-  height: 70px;
-  width: 70px;
+@media screen and (min-width: 1200px) {
+  .features__section {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .features-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-item {
+    max-width: 270px;
+  }
 }
 
 .features-icon {
@@ -368,6 +371,34 @@ button {
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+.features-icons {
+  height: 70px;
+  width: 70px;
+}
+
+.features-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .features-text {
+    text-align: center;
+  }
+}
+
+.features-texts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 @media screen and (max-width: 1199px) {
