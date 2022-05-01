@@ -1,41 +1,51 @@
 .hero__button {
     display: flex;
     justify-content: center;
-  }
+}
+  .hero {
+    &-owerlay {    
+      // height: 400px;
+      // margin-left: auto;
+      // margin-right: auto;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          image-set(url('../images/hero/hero-bg-480.jpg') 1x, url('../images/hero/hero-bg-480@2x.jpg') 2x);
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {            
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+              image-set(url('../images/hero/hero-bg-768.jpg') 1x, url('/images/hero/hero-bg-768@2x.jpg') 2x);
+      }
+
+      @media screen and (min-width: 1200px) {
+          max-width: 1600px;
+          height: 600px;
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          image-set(url('../images/hero/hero-bg-1200.jpg') 1x, url('../images/hero/hero-bg-1200@2x.jpg') 2x);
+      }}
+
   .hero__style {
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    max-width: 350px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    @media screen and (min-width: 1200px){
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    font-family: "Roboto";
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white-color;
+    color: $white-color;}
   }
-  .hero {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 200px 0;
-    height: 600px;
-    background-image: linear-gradient(
-      $hero-gradient,
-      $hero-color),
-      url(../images/im18.jpg);
-    background-repeat: no-repeat;
-    background-color: $footer-color;
-  }
-  .hero-owerlay{
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, $hero-color, $hero-color), url(../images/im18.jpg);
-    background-size: cover;}
     .button-main {
       display: block;
       margin: 0 auto;
@@ -53,4 +63,4 @@
       border-color: transparent;
       border-radius: 4px;
       cursor: pointer;
-    }
+      }}
