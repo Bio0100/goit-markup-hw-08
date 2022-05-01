@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="./css/main.min.css">
 <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 
+
 </head>
 <body>
 
@@ -46,12 +47,47 @@
                 +38 096 111 11 11</a>
             </li>
         </ul>
-        <button type="button" class="header__bt-menu" aria-label="кнопка меню">
+        <button type="button" class="header__bt-menu header__bt-menu--active" aria-label="кнопка меню" aria-expanded="false" data-menu-button>
             <svg class="icon__menu">
                 <use class="icon-open" href="./images/symbol-defs.svg#icon-menu_40px"></use>
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px-1"></use>
             </svg>
         </button>
+    </div>
+    <div class="header__mobile mob" data-menu>        
+        <ul class="mob__nav mob-nav">
+            <li class="mob-nav__item">
+                <a class="mob-nav__link current" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-nav__item">
+                <a class="mob-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-nav__item">
+                <a class="mob-nav__link" href="">Контакты</a>
+            </li>
+        </ul>
+        <ul class="mobile__contacts mob-contacts">
+            <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__link">info@devstudio.com</a>
+            </li>            
+        </ul>
+        <ul class="mob-socials">
+            <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link">Instagram</a>
+            </li>
+            <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link">Twitter</a>
+            </li>
+            <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link">Facebook</a>
+            </li>
+            <li class="mob-socials__item">
+                <a href="#" class="mob-socials__link">LinkedIn</a>
+            </li>
+        </ul>
     </div>
 </header>
 <main>
@@ -439,5 +475,6 @@
     </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
-</html> -->
+</html>

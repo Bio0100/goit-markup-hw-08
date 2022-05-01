@@ -311,6 +311,7 @@ button {
 .icon__menu {
   width: 40px;
   height: 40px;
+  z-index: 100;
 }
 
 .header__bt-menu {
@@ -336,11 +337,116 @@ button {
 }
 
 .icon-open {
+  opacity: 0;
+}
+
+.header__bt-menu--active .icon-open {
   opacity: 1;
 }
 
 .icon-close {
+  opacity: 1;
+}
+
+.header__bt-menu--active .icon-close {
   opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header__mobile {
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__mobile--active {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.mob {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .mob {
+    display: none;
+  }
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: #2196f3;
+}
+
+.mob-contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mob-contacts__item:first-child {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-contacts__item:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-socials {
+  display: flex;
+}
+
+.mob-socials__item {
+  padding: 0 10px;
+}
+
+.mob-socials__item:first-child {
+  padding-left: 0;
+}
+
+.mob-socials__item:last-child {
+  padding-right: 0;
+}
+
+.mob-socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .hero__button {
@@ -693,6 +799,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1000;
   height: 581px;
   width: 528px;
   padding: 40px;
