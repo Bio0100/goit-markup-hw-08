@@ -57,12 +57,15 @@
    }
   .project{
     @media screen and (min-width: 480px) and (max-width: 768px){
-      display: flex;}
+      display: flex;
+      justify-content: space-around;
+    }
       @media screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
     gap: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
+
   }
 
     display: flex;
@@ -94,6 +97,9 @@
  }
   
   .project__text-name{
+    @media screen and (min-width: 480px) and (max-width: 1999px){
+      font-size: 17px;
+    }
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
@@ -106,10 +112,11 @@
   border-radius: 0px 0px 4px 4px;
   }
   .project__list{
+    max-width: 450px;
     @media screen and (min-width: 768px) and (max-width: 1199px){
       max-width: 354px;
     }
-    max-width: 370px;
+
     
   }
   .project__photo{

@@ -1287,6 +1287,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1331,6 +1333,12 @@ button {
   color: #212121;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1999px) {
+  .project__text-name {
+    font-size: 17px;
+  }
+}
+
 .project__text-img {
   padding: 20px 24px;
   border: 1px solid #eee;
@@ -1338,7 +1346,7 @@ button {
 }
 
 .project__list {
-  max-width: 370px;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
