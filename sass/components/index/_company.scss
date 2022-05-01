@@ -1,7 +1,15 @@
 .company__list{
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
     display: flex;
     justify-content: center;
     gap: 30px;
+
   }
   .company__link{
   display: inline-flex;

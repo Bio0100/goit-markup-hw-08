@@ -1,8 +1,43 @@
+
 .footer{
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    display: flex;
+    align-items: center;
+    background-color: #2f303a;
+    flex-direction: column;
+    align-content: space-around;}
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    -webkit-box-pack: center;
+    -webkit-box-align: baseline;
+    text-align: center;}
+
   display: flex;
   align-items: baseline;
-  background-color: $footer-color;
-}
+  background-color: $footer-color;}
+  .footer__contact-list{
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      flex-wrap: wrap;
+   }
+  }
+  .footer__flex-item:not(:last-child){
+    margin-bottom: 60px;}
+  .socials__item{
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    display: flex;
+    justify-content: center;}
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      flex-wrap: wrap;
+   }}
 footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -21,16 +56,23 @@ footer {
     color: $akcent-color;}
 }
 
+  
 .footer__flex-item .socials__link:hover,
 .footer__flex-item .socials__link:focus{
     background-color: $akcent-color;
   }
-  .footer__flex-item:nth-child(1) {
-    margin-right: 70px;}
-  .footer__flex-item:nth-child(2) {
-      margin-right: 93px;
+  @media screen  and(min-width: 1200px){
+    .footer__flex-item:nth-child(1) {
+      margin-right: 70px;}
+    .footer__flex-item:nth-child(2) {
+        margin-right: 93px;
+  }
   }
   .socials__link {
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      display: flex;
+      justify-content: center;
+     }
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +92,10 @@ footer {
 }
 
   .footer__logo{
+    @media screen and (min-width: 480px) and (max-width: 767px){
+      display: flex;
+      justify-content: center;
+    }
     display: inline-block;
     margin-bottom: 20px;
     font-family: "Raleway";
@@ -80,6 +126,13 @@ footer {
   padding: 32px 0;
 }
 .footer__text{
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    
+    text-align: center;}
 margin-bottom: 20px;
 font-weight: 700;
 font-size: 14px;
@@ -88,6 +141,14 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $white-color}
 .footer__input-email{
+  @media screen and (max-width: 1199px){
+    margin-bottom: 20px;
+    & {
+      width: 450px;
+      margin-right: 0px;
+    }
+}
+
   padding: 14px 16px;
   margin-right: 12px;
   width: 358px;
@@ -107,11 +168,40 @@ border-color: $accent-color;}
 border-color: $accent-color;
 outline: none;}
 }
-.footer__form .button-main {
+// .footer__form{
+//   @media screen and (min-width: 480px) and (max-width: 767px){
+//     justify-content: center;
+//   margin-left: auto;
+//   margin-right: auto;}
+// }
+.footer__btn-s{
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    display: flex;
+    justify-content: center;
+  
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;}
   display: inline-flex;
-  align-items: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center; 
+    color: $white-color;
+    background: $akcent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.footer__form .button-main::after{
+
+.footer__btn-s::after{
   content: '';  
   width: 24px;
   height: 24px;
@@ -133,3 +223,9 @@ outline: none;}
   .footer__flex-item .socials__link{
     background-color: rgba(255, 255, 255, 0.1);
   }
+  
+.footer__item{
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    
+    text-align: center;
+}}

@@ -2,7 +2,23 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .button__control {
+  .button__control{
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin-bottom: 40px
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px 8px;
+      justify-content: center
+
+      }
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -40,6 +56,15 @@
    0px 2px 2px rgba(0, 0, 0, 0.12);
    }
   .project{
+    @media screen and (min-width: 480px) and (max-width: 768px){
+      display: flex;}
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
     display: flex;
     flex-basis: calc(100% / 9);
     flex-wrap: wrap;
@@ -81,7 +106,11 @@
   border-radius: 0px 0px 4px 4px;
   }
   .project__list{
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      max-width: 354px;
+    }
     max-width: 370px;
+    
   }
   .project__photo{
     position: relative;
