@@ -1,4 +1,6 @@
 .hero__button {
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    margin-top: 80px;}
     display: flex;
     justify-content: center;
 }
