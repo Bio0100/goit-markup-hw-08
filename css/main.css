@@ -1691,20 +1691,14 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-  .footer__flex-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .footer__flex-item:not(:last-child) {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .footer__flex-item .footer__item {
+  .footer__item {
     text-align: center;
   }
 }

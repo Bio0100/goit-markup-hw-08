@@ -229,17 +229,14 @@ outline: none;}
     background-color: rgba(255, 255, 255, 0.1);
   }
   .footer__flex-item{
-    @media screen and (max-width:768px){
-      &:not(:last-child){
-        margin-bottom: 30px;
-      }}
-      
-    @media screen and (min-width:768px) and (max-width: 1199px){
+       
+    @media screen and (max-width: 1199px){
       &:not(:last-child){
         margin-bottom: 60px;
       }
-    }
+    }}
+      
 .footer__item{
   @media screen and (max-width: 1199px){
     text-align: center;}
-}}
+}
