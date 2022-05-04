@@ -32,16 +32,13 @@
 }
 .team__photo{
   margin-bottom: 30px;
-  @media screen and (min-width: 320px) {
-    width: 450px;
-    height: 460px;}
-
+ 
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 362px;}
+    max-width: 354px;
+    max-height: 362px;}
 @media screen and (min-width: 1200px) {
-  width: 270px;
-  height: 276px;}
+  max-width: 270px;
+  max-height: 276px;}
 }
 
 

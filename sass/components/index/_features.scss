@@ -1,9 +1,10 @@
 .features__section {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
-    padding: 0px;
+  @media screen and (min-width: 1200px){
+    padding: 94px 0 0 0;
   }
+
 }
 
   .features-list{
@@ -22,7 +23,7 @@
   }
 
   @media screen and(max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
   }
 
   @media screen and (min-width: 768px) {
