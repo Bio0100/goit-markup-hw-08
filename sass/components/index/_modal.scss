@@ -1,10 +1,17 @@
+.backdrop{
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 999;
+    overflow-y: scroll;
+}
 .modal{
   @media screen and (max-width: 479px){
     max-width: calc(100vw - 30px);
     padding: 40px 15px;}
-    @media screen and (min-width: 1200px){
-        width: 528px;
-    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,6 +25,9 @@
     transition: transform $timing-function; 
     cursor: pointer;
     overflow: hidden;
+    @media screen and (min-width: 1200px){
+      width: 528px;
+  }
   }
   
   .modal-close{
@@ -176,11 +186,4 @@
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
-}
-.backdrop is-hidden{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }

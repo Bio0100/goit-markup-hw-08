@@ -91,10 +91,27 @@
     }
 }
 
-.mob-socials__link {    
+.mob-socials__item{
+    @media screen and (max-width: 479px){
+    padding-right: 5px;
+    padding-left: 5px;
+}}
+.mob-socials__link { 
+    @media screen and (max-width: 479px){
+    font-size: 14px; 
+    padding-right: 0px;
+
+}
+
+
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;    
     letter-spacing: 0.02em;    
     color: $accent-color;    
 }
+.mob-contacts__link{
+    @media screen and (max-width: 380px){
+    margin-bottom: 32px;
+    font-size: 24px;
+}}

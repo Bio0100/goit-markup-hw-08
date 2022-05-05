@@ -522,12 +522,45 @@ button {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 479px) {
+  .mob-socials__item {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .mob-socials__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .mob-socials__link {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mob-contacts__link {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+}
+
+.hero {
+  padding: 118px 0 118px 0;
+  text-align: center;
+  background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px 0;
+  }
 }
 
 .hero__button {
@@ -539,12 +572,9 @@ button {
           justify-content: center;
 }
 
-.hero {
+.hero-owerlay {
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero-owerlay {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/hero/hero-bg-480.jpg") 1x, url("../images/hero/hero-bg-480@2x.jpg") 2x);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero/hero-bg-480.jpg") 1x, url("../images/hero/hero-bg-480@2x.jpg") 2x);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/hero/hero-bg-480.jpg") 1x, url("../images/hero/hero-bg-480@2x.jpg") 2x);
@@ -569,7 +599,7 @@ button {
   }
 }
 
-.hero .hero__style {
+.hero__style {
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -584,7 +614,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .hero__style {
+  .hero__style {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
@@ -597,7 +627,7 @@ button {
   }
 }
 
-.hero .button-main {
+.button-main {
   display: block;
   margin: 0 auto;
   width: 200px;
@@ -993,6 +1023,17 @@ button {
   background-color: #ffffff;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  overflow-y: scroll;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -1256,14 +1297,6 @@ button {
   cursor: pointer;
 }
 
-.backdrop is-hidden {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 .struducture {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1459,15 +1492,18 @@ button {
 
 .project__texts {
   position: absolute;
-  max-height: 294px;
+  bottom: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 63px 24px;
-  background-color: #2196f3;
+  height: 100%;
+  padding: 13px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1480,10 +1516,17 @@ button {
 }
 
 .project__text {
-  font-size: 18px;
+  font-size: 14px;
+  text-align: left;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 380px) {
+  .project__text {
+    font-size: 18px;
+  }
 }
 
 .footer {
